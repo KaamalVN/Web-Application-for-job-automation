@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap");
+/* NAVBAR STYLING STARTS */
+body{
+    margin:0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 0px 0px;
+}
+.logout{
+    background-color: #ff0008;
+    display: flex;
+    font-family: 'Jost';
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    border-radius: 8px;
+    padding: 7px 16px;
+  }
+  .logout:hover {
+    background-color: #ff0008;
+    color: white;
+    border-radius: 18px;
+    transition: all 0.2s ease-out;
+   }
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px 0px 0px;
+    width: 100%;
+    z-index: 9;
+    background: #0788fe;
+    color: #fff;
+    cursor: pointer;
+    font-family: Jost, sans-serif;
+   }
+   .nav-links a {
+    color: #fff;
+   }
+   /* LOGO */
+   .logo {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 20px;
+   }
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 24px;
+   }
+   .menu li:hover {
+    background-color: #ffffff !important;
+    color: #0788fe !important;
+    border-radius: 18px !important;
+    transition: all 0.2s ease-out !important;
+   }
+   .menu li {
+    padding: 5px 14px !important;
+   }
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+    cursor: pointer;
+   }
+   /* APPLYING MEDIA QUERIES */
+   @media (max-width: 768px) {
+    body{
+        margin:0;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px 0px 0px 0px;
+    }
+    .menu { 
+    display:none;
+    position: absolute;
+    background-color:#0788fe;
+    margin-top: 32px;
+    overflow: visible;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+   }
+   .logout{
+    background-color: #ff0008;
+    display:inline-block;
+    color: white;
+    border-radius: 8px;
+    padding: 7px 16px;
+  }
+   .menu li:hover {
+    display: inline-block;
+    background-color:#f2f8fc;
+    transition: 0.3s ease;
+   }
+   .menu li + li {
+    margin-top: 12px;
+   }
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+   .hamburger {
+    display: block;
+    cursor: pointer;
+    padding: 0px 15px 0px 0px;
+   }
+   }
+   ul {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}

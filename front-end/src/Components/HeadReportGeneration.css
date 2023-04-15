@@ -1,0 +1,38 @@
+form{
+    margin: 30px 0px;
+  }
+  
+  .viewer{
+    background-color: #e4e4e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+  
+  span{
+    margin-top: 0%;
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+  }
+  .field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display:grid;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  .field1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display:grid;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }

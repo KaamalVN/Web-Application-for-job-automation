@@ -1,0 +1,721 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap");
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+.span1{
+  margin-top: 10%;
+  position: relative;
+  background-size: cover;
+  width: 100%;
+}
+span{
+  margin-top: 0%;
+  position: absolute;
+  background-size: cover;
+  width: 100%;
+}
+input {
+	outline: none;
+	border: none;
+}
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+button:hover {
+	cursor: pointer;
+}
+/*---------------------------------------------*/
+.container {
+	max-width: 1200px;
+}
+/*//////////////////////////////////////////////////////////////////
+[ Contact ]*/
+.container-info {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-image: url(img/bg.jpg);
+  position: fixed;
+  background-size: cover;
+  overflow: scroll;
+}
+/*------------------------------------------------------------------
+[ Form ]*/
+.info-form {
+  width: 500px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 42px 55px 30px 55px;
+  overflow: visible;
+}
+.info-form-title {
+  display: block;
+  font-family: Jost;
+  font-size: 35px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 24px;
+}
+/*------------------------------------------------------------------
+[ Input ]*/
+.label-input100 {
+  font-family: Jost;
+  font-weight:bolder;
+  font-size: 15px;
+  color: #666666;
+  line-height: 1.5;
+  padding-left: 5px;
+}
+form input {
+  font-family: Jost, sans-serif;
+  width: 100%;
+  outline: none;
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  display: block;
+  padding: 0.9rem 0.1rem;
+  box-sizing: border-box;
+  /*box-shadow: 0px 2px 4px rgba(7, 136, 254, 1); */
+  font-size: 17px;
+  color: #4A4A4A;
+  text-indent: 4px;
+  transition: 0.4s;
+  border: 1px solid #ccc;
+}
+.input1001 {
+  display: block;
+  width: 100%;
+  background: transparent;
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.2;
+  /*padding: 0 5px;*/
+  
+  font-family: Jost, sans-serif;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+  /*padding: 0.7rem 0.5rem;*/
+  box-sizing: border-box;
+  /*box-shadow: 0px 2px 4px rgba(7, 136, 254, 1); */
+  color: #4A4A4A;
+  transition: 0.4s;
+  border: none;
+}
+.form-fielder {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.effect~.focus-border:before,
+.effect~.focus-border:after {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 0;
+ height: 2px;
+ background-color: #0788fe;
+ transition: 0.3s;
+}
+.effect~.focus-border:after {
+ top: auto;
+ bottom: 0;
+ left: auto;
+ right: 0;
+}
+.effect~.focus-border i:before,
+.effect~.focus-border i:after {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 2px;
+ height: 0;
+ background-color: #0788fe;
+ transition: 0.4s;
+}
+.effect~.focus-border i:after {
+ left: auto;
+ right: 0;
+ top: auto;
+ bottom: 0;
+}
+.effect:focus~.focus-border:before,
+.effect:focus~.focus-border:after {
+ width: 100%;
+ transition: 0.3s;
+}
+.effect:focus~.focus-border i:before,
+.effect:focus~.focus-border i:after {
+ height: 100%;
+ transition: 0.4s;
+}
+.focus-input100 {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+.focus-input100::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+
+  background: #7f7f7f;
+}
+/*---------------------------------------------*/
+input.input1001 {
+  height: 40px;
+}
+.input1001:focus + .focus-input100::before {
+  width: 100%;
+}
+.has-val.input1001 + .focus-input100::before {
+  width: 100%;
+}
+/*------------------------------------------------------------------
+[ Button ]*/
+form .btn {
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  box-sizing: border-box;
+  background-color: #0788fe;
+  font-family: Jost, sans-serif;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+  width: 300%;
+  height: 100%;
+  padding: 0.9rem 1.7rem;
+  text-align: center;
+  font-size: 17px;
+}
+/*//////////////////////////////////////////////////////////////////
+[ Select box ]*/
+.dummy{
+  margin-top: 10px;
+  padding-top: 13px;
+  overflow: hidden;
+}
+form .col-md-6{
+  font-size: 16px;
+  width: 100%;
+  color: #000;
+  content: " ";
+  display: block;
+  background-repeat: no-repeat;
+  overflow: visible;
+}
+/******************************************************************/
+.selecterdiv {
+  position: relative;
+  display: block;
+  width:100%;
+}
+select::-ms-expand {
+display: none;
+}
+.selecterdiv:after {
+  content: '<>';
+  font-size: 17px;
+  font-family:'Jost';
+  color: #333;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 9px;
+  top: 9px;
+  padding: 0 0 6px;
+  border-bottom: 1px solid #999;
+  background-color: white; 
+  position: absolute;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.selecterdiv select {
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Add some styling */
+  
+  display: block;
+  width: 100%;
+  padding: 2px;
+  height: 45px;
+  font-size: 16px;
+  font-family: 'Jost';
+  line-height: 1.2;
+  color: #333;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  -ms-word-break: normal;
+  word-break: normal;
+}
+/**************************************************************/
+.selector {
+  position: relative;
+  display: block;
+  width:100%;
+}
+select::-ms-expand {
+display: none;
+}
+.selector:after {
+  content: '<>';
+  font-size: 17px;
+  font-family:'Jost';
+  color: #333;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 9px;
+  top: 9px;
+  padding: 0 0 6px;
+  border-bottom: 1px solid #999;
+  background-color: white; 
+  position: absolute;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.selector select {
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Add some styling */
+  
+  display: block;
+  width: 100%;
+  padding: 2px;
+  height: 45px;
+  font-size: 16px;
+  font-family: 'Jost';
+  line-height: 1.2;
+  color: #333;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  -ms-word-break: normal;
+  word-break: normal;
+}
+form .btn {
+  color: white;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 40px;
+  background-color: rgba(7, 136, 254, 1);
+  width: 100%;
+  font-family: Jost, sans-serif;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0.9rem 1.7rem;
+  text-align: center;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 20px;
+
+}
+.visible{
+  display: block;
+}
+.hide{
+  display: none;
+}@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap");
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+input {
+	outline: none;
+	border: none;
+}
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+button:hover {
+	cursor: pointer;
+}
+/*---------------------------------------------*/
+.container {
+	max-width: 1200px;
+}
+/*//////////////////////////////////////////////////////////////////
+[ Contact ]*/
+.container-info {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-image: url(img/bg.jpg);
+  position: fixed;
+  background-size: cover;
+  overflow: scroll;
+}
+/*------------------------------------------------------------------
+[ Form ]*/
+.info-form {
+  width: 500px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 42px 55px 30px 55px;
+  overflow: visible;
+}
+.info-form-title {
+  display: block;
+  font-family: Jost;
+  font-size: 35px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 24px;
+}
+/*------------------------------------------------------------------
+[ Input ]*/
+.label-input100 {
+  font-family: Jost;
+  font-weight:bolder;
+  font-size: 15px;
+  color: #666666;
+  line-height: 1.5;
+  padding-left: 5px;
+}
+form input {
+  font-family: Jost, sans-serif;
+  width: 100%;
+  outline: none;
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  display: block;
+  padding: 0.9rem 0.1rem;
+  box-sizing: border-box;
+  /*box-shadow: 0px 2px 4px rgba(7, 136, 254, 1); */
+  font-size: 17px;
+  color: #4A4A4A;
+  text-indent: 4px;
+  transition: 0.4s;
+  border: 1px solid #ccc;
+}
+.input1001 {
+  display: block;
+  width: 100%;
+  background: transparent;
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.2;
+  /*padding: 0 5px;*/
+  
+  font-family: Jost, sans-serif;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+  /*padding: 0.7rem 0.5rem;*/
+  box-sizing: border-box;
+  /*box-shadow: 0px 2px 4px rgba(7, 136, 254, 1); */
+  color: #4A4A4A;
+  transition: 0.4s;
+  border: none;
+}
+.form-fielder {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.effect~.focus-border:before,
+.effect~.focus-border:after {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 0;
+ height: 2px;
+ background-color: #0788fe;
+ transition: 0.3s;
+}
+.effect~.focus-border:after {
+ top: auto;
+ bottom: 0;
+ left: auto;
+ right: 0;
+}
+.effect~.focus-border i:before,
+.effect~.focus-border i:after {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 2px;
+ height: 0;
+ background-color: #0788fe;
+ transition: 0.4s;
+}
+.effect~.focus-border i:after {
+ left: auto;
+ right: 0;
+ top: auto;
+ bottom: 0;
+}
+.effect:focus~.focus-border:before,
+.effect:focus~.focus-border:after {
+ width: 100%;
+ transition: 0.3s;
+}
+.effect:focus~.focus-border i:before,
+.effect:focus~.focus-border i:after {
+ height: 100%;
+ transition: 0.4s;
+}
+.focus-input100 {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+.focus-input100::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+
+  background: #7f7f7f;
+}
+/*---------------------------------------------*/
+input.input1001 {
+  height: 40px;
+}
+.input1001:focus + .focus-input100::before {
+  width: 100%;
+}
+.has-val.input1001 + .focus-input100::before {
+  width: 100%;
+}
+/*------------------------------------------------------------------
+[ Button ]*/
+form .btn {
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  box-sizing: border-box;
+  background-color: #0788fe;
+  font-family: Jost, sans-serif;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+  width: 300%;
+  height: 100%;
+  padding: 0.9rem 1.7rem;
+  text-align: center;
+  font-size: 17px;
+}
+/*//////////////////////////////////////////////////////////////////
+[ Select box ]*/
+.dummy{
+  margin-top: 10px;
+  padding-top: 13px;
+  overflow: hidden;
+}
+form .col-md-6{
+  font-size: 16px;
+  width: 100%;
+  color: #000;
+  content: " ";
+  display: block;
+  background-repeat: no-repeat;
+  overflow: visible;
+}
+/******************************************************************/
+.selecterdiv {
+  position: relative;
+  display: block;
+  width:100%;
+}
+select::-ms-expand {
+display: none;
+}
+.selecterdiv:after {
+  content: '<>';
+  font-size: 17px;
+  font-family:'Jost';
+  color: #333;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 9px;
+  top: 9px;
+  padding: 0 0 6px;
+  border-bottom: 1px solid #999;
+  background-color: white; 
+  position: absolute;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.selecterdiv select {
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Add some styling */
+  
+  display: block;
+  width: 100%;
+  padding: 2px;
+  height: 45px;
+  font-size: 16px;
+  font-family: 'Jost';
+  line-height: 1.2;
+  color: #333;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  -ms-word-break: normal;
+  word-break: normal;
+}
+/**************************************************************/
+.selector {
+  position: relative;
+  display: block;
+  width:100%;
+}
+select::-ms-expand {
+display: none;
+}
+.selector:after {
+  content: '<>';
+  font-size: 17px;
+  font-family:'Jost';
+  color: #333;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 9px;
+  top: 9px;
+  padding: 0 0 6px;
+  border-bottom: 1px solid #999;
+  background-color: white; 
+  position: absolute;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.selector select {
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Add some styling */
+  
+  display: block;
+  width: 100%;
+  padding: 2px;
+  height: 45px;
+  font-size: 16px;
+  font-family: 'Jost';
+  line-height: 1.2;
+  color: #333;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  -ms-word-break: normal;
+  word-break: normal;
+}
+form .btn {
+  color: white;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 40px;
+  background-color: rgba(7, 136, 254, 1);
+  width: 100%;
+  font-family: Jost, sans-serif;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0.9rem 1.7rem;
+  text-align: center;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 20px;
+
+}
+.visible{
+  display: block;
+}
+.hide{
+  display: none;
+}

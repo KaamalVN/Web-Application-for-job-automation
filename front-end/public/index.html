@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/sonaversity-logo-small.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Sonaversity</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap");
+body{
+  background:#ffffff;
+}
+
+#global{
+  width:70px;
+  position:absolute;
+  cursor:pointer;
+  height:60px;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+}
+
+.mask{
+  position:absolute;
+  border-radius:2px;
+  overflow:hidden;
+   perspective: 1000;
+  backface-visibility: hidden;
+}
+
+.plane{
+  background:#282828;
+  width:400%;
+  height:100%;
+  position:absolute;
+  transform : translate3d(0px,0,0);
+  /*transition: all 0.8s ease; */
+  z-index:100;
+  perspective: 1000;
+  backface-visibility: hidden; 
+}
+.animation{
+  transition: all 0.3s ease;
+}
+
+
+ 
+#top .plane{
+  z-index:2000;
+  animation : trans1 1.3s ease-in infinite  0s backwards;
+}
+#middle .plane{
+  transform : translate3d(0px,0,0);  
+  background : #D3D3D3;
+  animation : trans2 1.3s linear infinite  0.3s  backwards;
+
+}
+#bottom .plane{
+  z-index:2000;
+  animation : trans3 1.3s ease-out infinite  0.7s backwards;
+}
+#top{
+  width:53px;
+  height:20px;
+  left:20px;
+  transform: skew(-15deg, 0);
+  z-index:100;
+}
+#middle{
+  width:33px;
+  height:20px;
+  left:20px;
+  top:15px;
+  
+  transform: skew(-15deg, 40deg)
+}
+#bottom{
+  width:53px;
+  height:20px;
+  top:30px;  
+  transform: skew(-15deg, 0)
+}
+p{
+  color:#000000;
+  position:absolute;
+  left: -3px;
+  top:45px;
+  font-family: Jost, sans-serif;
+  text-align:center;
+  font-size:15px;
+}
+.dummy{
+  margin-top: 7px;
+}
+@keyframes trans1{ 
+  from { 
+    transform : translate3d(56px,0,0)
+  }
+  to { 
+    transform : translate3d(-250px,0,0)
+  }
+}
+@keyframes trans2{ 
+  from { 
+    transform : translate3d(-160px,0,0)
+  }
+  to { 
+    transform : translate3d(53px,0,0)
+  }
+}
+
+@keyframes trans3{ 
+  from { 
+    transform : translate3d(53px,0,0)
+  }
+  to { 
+    transform : translate3d(-220px,0,0)
+  }
+}
+@keyframes animColor{ 
+  from { 
+    background : red;
+  }
+  25%{
+    background : yellow;
+  }
+  50%{
+    background : green;
+  }
+  75%{
+    background : brown;
+  }
+  to { 
+    background : blue;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <section id="global">
+
+        <div id="top" class="mask">
+          <div class="plane"></div>
+        </div>
+        <div id="middle" class="mask">
+          <div class="plane"></div>
+        </div>
+    
+        <div id="bottom" class="mask">
+          <div class="plane"></div>
+        </div>
+        
+      <p class="dummy"><i>LOADING...</i></p>
+        
+    </section>
+    </div>
+    
+  </body>
+</html>
